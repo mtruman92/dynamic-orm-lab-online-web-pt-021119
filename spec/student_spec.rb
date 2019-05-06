@@ -89,7 +89,7 @@ describe Student do
         expect(new_student.values_for_insert).to eq("'Sam', '11'")
       end
     end
-=begin
+
     describe '#save' do 
       it 'saves the student to the db' do 
         new_student.save
@@ -102,7 +102,7 @@ describe Student do
       end
     end
   end
-=end 
+ 
   describe '.find_by_name' do 
     it 'executes the SQL to find a row by name' do 
       Student.new({name: "Jan", grade: 10}).save
